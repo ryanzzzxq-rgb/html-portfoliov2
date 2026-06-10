@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="
+default-src 'self';
+script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
+style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+font-src 'self' https://fonts.gstatic.com;
+img-src 'self' data: https:;
+connect-src 'self' https:;
+object-src 'none';
+base-uri 'self';
+frame-ancestors 'none';
+">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="favicon.ico" />
+  <title>Davison Creative Studio | Digital & Tech Solutions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Hammersmith+One&family=Rowdies:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="intro-loader">
+    <h1>Moses Davison</h1>
+
+    <div class="loader-box">
+      <div class="loading-bar">
+        <div class="progress"></div>
+      </div>
+
+      <p><span id="percent">0</span>% Loading...</p>
+    </div>
+  </div>
+
+  <div id="particles-js"></div>
+  <div class="cursor-circle"></div>
+
+  <header class="address">
+    <address>
+      <i class="fa-solid fa-location-dot"></i>
+      Lavita, The Oasis by Emaar, Dubai, UAE
+    </address>
+  </header>
+
+  <header class="navbar">
+    <h1>Davison</h1>
+
+    <!-- Toggle button with icon -->
+    <button class="menu-toggle" id="menuBtn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav id="nav-links">
+      <a href="#home">HOME</a>
+      <a href="#services">SERVICES</a>
+      <a href="#designs">PROJECTS</a>
+      <a href="#about">ABOUT</a>
+
+    </nav>
+  </header>
+
+  <section class="heading" id="home">
+    <div class="heading-text">
+      <h2>Creative Digital Solutions <br /> for <span class="highlight"> Modern Businesses </span></h2>
+
+      <p id="typing-text"></p>
+
+      <a href="https://wa.me/+2348068232887" class="btn" target="_blank" rel="noopener noreferrer">
+        Hire Me
+      </a>
+      <a href="./cv/Moses CV.pdf" class="btn cv-view" target="_blank" rel="noopener noreferrer">
+        View CV
+      </a>
+
+
+    </div>
+
+    <div class="profile">
+      <img src="./image/profile.png" alt="Davison" />
+
+
+      <div class="profile-social">
+        <a href="https://wa.me/2348068232887" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/lotachukwu-m-687b7a209/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+    <h3>ABOUT ME</h3>
+    <p class="subtitle">Who I Am</p>
+
+    <p>
+      Hello, I'm Davison Moses, a multi-skilled digital professional dedicated to helping businesses grow and thrive
+      online. With expertise in Graphic Design, Full-Stack Web Development, DevOps Engineering, Cybersecurity, WordPress
+      Development, and IT Support, I deliver innovative solutions tailored to modern business needs.
+
+      My mission is to create impactful digital experiences, strengthen online security, and support brands in building
+      a strong and sustainable online presence.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h3>SKILLS</h3>
+
+    <div class="skills-wrapper">
+
+      <div class="skills-track">
+
+        <div class="skill-box web">
+          <h4><i class="fa-solid fa-code"></i> Web Development</h4>
+          <ul class="skill">
+            <li><i class="fa-brands fa-html5"></i> HTML5</li>
+            <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+            <li><i class="fa-brands fa-js"></i> JavaScript</li>
+            <li><i class="fa-solid fa-mobile-screen"></i> Responsive Design</li>
+            <li><i class="fa-solid fa-laptop-code"></i> Front-End Development</li>
+            <li><i class="fa-solid fa-database"></i> Back-End Development</li>
+            <li><i class="fa-solid fa-plug"></i> API Integration</li>
+          </ul>
+        </div>
+
+        <div class="skill-box design">
+          <h4><i class="fa-solid fa-palette"></i> Graphic Design</h4>
+          <ul class="skill">
+            <li><i class="fa-solid fa-pen-nib"></i> Logo Design</li>
+            <li><i class="fa-solid fa-paintbrush"></i> Brand Identity</li>
+            <li><i class="fa-solid fa-image"></i> Social Media Graphics</li>
+            <li><i class="fa-solid fa-bullhorn"></i> Marketing Materials</li>
+          </ul>
+        </div>
+
+        <div class="skill-box devops">
+          <h4><i class="fa-solid fa-cloud"></i> DevOps & Cloud</h4>
+          <ul class="skill">
+            <li><i class="fa-brands fa-git-alt"></i> Git & GitHub</li>
+            <li><i class="fa-solid fa-gears"></i> CI/CD</li>
+            <li><i class="fa-brands fa-docker"></i> Docker</li>
+            <li><i class="fa-brands fa-linux"></i> Linux</li>
+            <li><i class="fa-solid fa-server"></i> Server Management</li>
+          </ul>
+        </div>
+
+        <div class="skill-box security">
+          <h4><i class="fa-solid fa-shield-halved"></i> Cybersecurity</h4>
+          <ul class="skill">
+            <li><i class="fa-solid fa-lock"></i> Website Security</li>
+            <li><i class="fa-solid fa-shield"></i> Best Practices</li>
+            <li><i class="fa-solid fa-magnifying-glass"></i> Vulnerability Assessment</li>
+          </ul>
+        </div>
+
+        <div class="skill-box marketing">
+          <h4><i class="fa-solid fa-bullhorn"></i> Digital Marketing</h4>
+          <ul class="skill">
+            <li><i class="fa-solid fa-envelope"></i> Email Marketing</li>
+            <li><i class="fa-solid fa-users"></i> Lead Generation</li>
+            <li><i class="fa-solid fa-chart-line"></i> SEO</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="services" id="services">
+
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <i class="fa-brands fa-chromecast"></i>
+        <h3>Web Development</h3>
+        <p>Custom websites, landing pages, and responsive web applications.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-layer-group"></i>
+        <h3>Graphic Design</h3>
+        <p>Logos, branding, social media graphics, and marketing designs.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-brands fa-wordpress"></i>
+        <h3>WordPress Development</h3>
+        <p>Business websites, blogs, portfolios, and maintenance.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-cloud"></i>
+        <h3>DevOps Solutions</h3>
+        <p>CI/CD, server setup, automation, and deployment.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Cybersecurity</h3>
+        <p>Security audits, protection, and best practices.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="project-section" id="designs">
+    <h3>Featured Projects</h3>
+    <p>Showcasing practical solutions across web development, digital marketing, graphic design, and business support
+      services.</p>
+  </section>
+
+  <section class="project-gallery">
+
+    <div class="project-card">
+      <img src="./image/wp.png" alt="WordPress Project">
+      <div class="overlay">
+        <h3>WordPress Management</h3>
+        <button class="view-btn">
+          <i class="fa-solid fa-eye"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="project-card featured">
+      <img src="./image/seo.png" alt="SEO Project">
+      <div class="overlay">
+        <h3>SEO Optimization</h3>
+        <button class="view-btn">
+          <i class="fa-solid fa-eye"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="project-card featured">
+      <img src="./image/Front-End.png" alt="Front-End Project">
+      <div class="overlay">
+        <h3>Front-End</h3>
+        <button class="view-btn">
+          <i class="fa-solid fa-eye"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./image/gym flyer.jpg" alt="Design Project">
+      <div class="overlay">
+        <h3>Graphic Design</h3>
+        <button class="view-btn">
+          <i class="fa-solid fa-eye"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./image/email marketing.png" alt="Email Marketing">
+      <div class="overlay">
+        <h3>Email Marketing</h3>
+        <button class="view-btn">
+          <i class="fa-solid fa-eye"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="./image/lead.png" alt="Lead Generation">
+      <div class="overlay">
+        <h3>Lead Generation</h3>
+        <button class="view-btn">
+          <i class="fa-solid fa-eye"></i>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+
+  <div id="popup" class="popup">
+    <span class="close-popup">&times;</span>
+
+    <button class="nav prev">&#10094;</button>
+
+    <img id="popup-img" src="" alt="">
+
+    <button class="nav next">&#10095;</button>
+  </div>
+
+  <section class="why-work">
+    <h2>Why Work With Me</h2>
+
+    <div class="services-content">
+
+      <div class="services-image">
+        <img src="./image/service.png" alt="service">
+      </div>
+
+      <div class="services-list">
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Professional and Reliable</li>
+          <li><i class="fa-solid fa-check"></i> Attention to Detail</li>
+          <li><i class="fa-solid fa-check"></i> Security-Focused Development</li>
+          <li><i class="fa-solid fa-check"></i> Responsive Communication</li>
+          <li><i class="fa-solid fa-check"></i> Timely Project Delivery</li>
+          <li><i class="fa-solid fa-check"></i> Client-Centered Approach</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="testimonials">
+
+    <h2>Testimonials</h2>
+
+    <div class="testimonial-track">
+
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <i class="fa-solid fa-quote-left quote"></i>
+
+        <div class="testimonial-content">
+          <img src="./image/client3.png" alt="Client">
+
+          <div>
+            <p>"Excellent work, professional communication, and outstanding results."</p>
+            <h4>Ebere Ibe</h4>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <i class="fa-solid fa-quote-left quote"></i>
+
+        <div class="testimonial-content">
+          <img src="./image/client2.jpg" alt="Client">
+
+          <div>
+            <p>"Delivered our website on time and exceeded expectations."</p>
+            <h4>Sarah Johnson</h4>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <i class="fa-solid fa-quote-left quote"></i>
+
+        <div class="testimonial-content">
+          <img src="./image/client1.jpg" alt="Client">
+
+          <div>
+            <p>"Highly recommended for web development and design projects."</p>
+            <h4>Michael Brown</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-process">
+
+    <h2>WORK PROCESS</h2>
+
+    <div class="process-container">
+
+      <!-- Left Card -->
+      <div class="process-card">
+        <p>🔹 <strong>Discovery:</strong> Understanding your business goals.</p>
+        <p>🔹 <strong>Planning:</strong> Creating a roadmap and strategy.</p>
+        <p>🔹 <strong>Design:</strong> Developing user-focused designs.</p>
+        <p>🔹 <strong>Development:</strong> Building scalable solutions.</p>
+        <p>🔹 <strong>Testing:</strong> Ensuring quality and security.</p>
+        <p>🔹 <strong>Launch:</strong> Deploying the project successfully.</p>
+      </div>
+
+      <!-- Right Card -->
+      <div class="stats-card">
+
+        <div class="stat-item">
+          <span id="projects">0</span>
+          <p>Projects Completed</p>
+        </div>
+
+        <div class="stat-item">
+          <span id="skills">0</span>
+          <p>Digital Skills</p>
+        </div>
+
+        <div class="stat-item">
+          <span id="quality">0</span>
+          <p>Commitment to Quality</p>
+        </div>
+
+        <div class="stat-item">
+          <span>Fast</span>
+          <p>Project Delivery</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-container">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What services do you offer?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          I offer web development, graphic design, DevOps support, cybersecurity guidance, and digital marketing
+          solutions.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How long does a project take?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          Project timelines depend on complexity and requirements.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you offer support after delivery?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          Yes, I provide post-launch support to ensure everything runs smoothly and securely.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Can you redesign existing websites?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          Absolutely. I can modernize and improve existing websites.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <h3>Moses Davison</h3>
+      <p>
+        Professional Graphic Designer | Full-Stack Web Developer | DevOps Engineer | Cybersecurity Enthusiast
+      </p>
+
+      <div class="footer-bottom">
+        <p>© 2026 Moses. All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="index.js" defer></script>
+
+</body>
+
+</html>
