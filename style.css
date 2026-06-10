@@ -120,7 +120,8 @@ body>* {
   align-items: center;
   padding: 20px 5%;
   background: lightseagreen;
-  position: relative
+  position: relative;
+  z-index: 1000000;
 }
 
 .navbar h1 {
@@ -175,14 +176,20 @@ body>* {
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0,0,0,.3);
-    z-index: 99999;
+    z-index: 99999 !important;
+  }
+
+  /* ADD THESE */
+  #nav-links a {
+    display: block;
+    padding: 12px 0;
+    width: 100%;
   }
 
   #nav-links.show {
-    display: flex !important;
+    display: flex;
   }
 }
-
 
 /* Hero Section */
 .heading {
